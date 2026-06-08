@@ -55,6 +55,7 @@ def process_money():
 def is_trasacation_successfull(money_received,order_cost):
       if money_received >= order_cost:
             change = round(money_received - order_cost,2)
+            print(f"here is ${change} in change")
             global profit
             profit += order_cost
             return True
